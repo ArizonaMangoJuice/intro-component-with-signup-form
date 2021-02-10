@@ -104,7 +104,7 @@ h1{
 }
 
 .input-field::placeholder{
-    color: var(--grayish-blue);
+    color: var(--dark-blue);
 }
 
 .input-field:focus{
@@ -149,4 +149,68 @@ h1{
 
 .error-border{
     border-color: var(--red);
+}
+
+@media only screen and (max-width: 600px){
+    .main-container{
+        flex-direction: column;
+    }
+
+    .left-container{
+        width: 100%;
+        height: auto;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 7.6vw;
+        margin-bottom: 3.5vh;
+    }
+
+    .description{
+        font-size: 3.8vw;
+        text-align: center;
+    }
+
+    .right-container{
+        width: 100%;
+        height: auto;
+    }
+
+    .tip{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
+        padding: 6.8vw 6vw;
+        font-size: 3.8vw;
+        border-radius: .4vw;
+        margin-top: 7vh;
+    }
+
+    .form-container{
+        width: 90%;
+        margin: 2vh auto;
+    }
+
+    .input-field{
+        font-size: 4.8vw;
+        padding: 2vh 4vw;
+
+    }
+
+    .label-style{
+        font-size: 2.6vw;
+    }
+
+    .submit{
+        font-size: 3.9vw;
+        padding: 3.7vw;
+    }
+
+    .agree{
+        font-size: 2.7vw;
+        text-align: center;
+        color: var(--grayish-blue);
+    }
 }
