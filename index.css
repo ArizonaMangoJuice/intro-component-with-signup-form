@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* using rem will use the root font-size based on that */
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background: url('./images/bg-intro-desktop.png');
+    background-color: var(--red);
+}
+
+:root{
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(154, 59%, 51%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+.main-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container{
+    width: 40%;
+    border: 1px solid white;
+    height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 2.6rem;
+    margin: 0 auto;
+    width: 70%;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.description{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.right-container{
+    width: 40%;
+    border: 1px solid white;
+    height: 70vh;
+}
