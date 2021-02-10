@@ -19,9 +19,13 @@ body{
 :root{
     --red: hsl(0, 100%, 74%);
     --green: hsl(154, 59%, 51%);
-    --blue: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
     --dark-blue: hsl(249, 10%, 26%);
     --grayish-blue: hsl(246, 25%, 77%);
+}
+
+.bold{
+    font-weight: 700;
 }
 
 .main-container{
@@ -35,7 +39,6 @@ body{
 
 .left-container{
     width: 40%;
-    border: 1px solid white;
     height: 70vh;
     color: white;
     display: flex;
@@ -45,20 +48,36 @@ body{
 }
 
 h1{
-    font-size: 2.6rem;
+    font-size: 2.6vw;
     margin: 0 auto;
     width: 70%;
     line-height: 1.1;
-    margin-bottom: 20px;
+    margin-bottom: 1.5vh;
 }
 
 .description{
     width: 70%;
     margin: 0 auto;
+    font-size: .8vw;
 }
 
 .right-container{
     width: 40%;
     border: 1px solid white;
     height: 70vh;
+}
+
+.tip{
+    color: white;
+    background: var(--blue);
+    width: 70%;
+    margin: 15px 0 15px 0 ;
+    text-align: center;
+    padding: 1.8vh;
+    font-size: .8vw;
+    border-radius: 8px;
+}
+
+.form-container{
+
 }
