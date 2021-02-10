@@ -112,6 +112,14 @@ h1{
     border: .1vw solid var(--blue);
 }
 
+.label-style{
+    text-align: right;
+    font-size: 0.6vw;
+    color: var(--red);
+    width: 90%;
+    margin: 0 auto;
+}
+
 .submit{
     width: 90%;
     margin: 0 auto;
@@ -133,4 +141,12 @@ h1{
 
 .red{
     color: var(--red);
+}
+
+.hidden{
+    display: none;
+}
+
+.error-border{
+    border-color: var(--red);
 }

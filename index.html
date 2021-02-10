@@ -21,14 +21,23 @@
     <div class="right-container">
       <p class="tip"><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</p>
       <form class="form-container">
-        <input class="input-field" type="text" placeholder="First Name" />
-        <input class="input-field" type="text" placeholder="First Name" />
-        <input class="input-field" type="email" placeholder="Email Address" name="email" id="" />
-        <input class="input-field" type="password" name="password" placeholder="Password" id="" /> 
+        <input class="input-field" type="text" placeholder="First Name" name="firstName" />
+        <label id='firstlabel'  class="hidden label-style" for="firstName">First Name cannot be empty</label>
+        
+        <input class="input-field" type="text" placeholder="last Name" name="lastName"/>
+        <label id='lastlabel' class="hidden label-style" for="lastName">Last Name cannot be empty</label>
+        
+        <input class="input-field" type="email" placeholder="Email Address" name="email"  />
+        <label id='email' class="hidden label-style" for="email">Looks like this is not an email</label>
+        
+        <input class="input-field" type="password" name="password" placeholder="Password"  /> 
+        <label id='password' class="hidden label-style" for="password">Password cannot be empty</label>
+
         <button class="submit">CLAIM YOUR FREE TRIAL</button>
         <p class="agree">By clicking the button, you are agreeing to our <span class="bold red">Terms and Services</span></p>
       </form>
     </div>
   </div>
+  <script src="./index.js"></script>
 </body>
 </html>
