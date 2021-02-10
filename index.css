@@ -178,6 +178,7 @@ h1{
     .right-container{
         width: 100%;
         height: auto;
+        padding-bottom: 11vh;
     }
 
     .tip{
