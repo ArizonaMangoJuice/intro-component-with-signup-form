@@ -6,7 +6,6 @@ let password = false;
 let isEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
 ['click', 'keyup'].forEach( e => {
-    console.log(e)
     document.getElementsByName('firstName')[0]
     .addEventListener(e, event => {
         let input = document.getElementsByName('firstName')[0];
@@ -28,7 +27,6 @@ let isEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
 
 ['click', 'keyup'].forEach( e => {
-    console.log(e)
     document.getElementsByName('lastName')[0]
     .addEventListener(e, event => {
         let input = document.getElementsByName('lastName')[0];
@@ -49,7 +47,6 @@ let isEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 });
 
 ['click', 'keyup'].forEach( e => {
-    console.log(e)
     document.getElementsByName('email')[0]
     .addEventListener(e, event => {
         let input = document.getElementsByName('email')[0];
@@ -67,12 +64,10 @@ let isEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
             email = true;
         }
 
-        console.log(firstName)
     });
 });
 
 ['click', 'keyup'].forEach( e => {
-    console.log(e)
     document.getElementsByName('password')[0]
     .addEventListener(e, event => {
         let input = document.getElementsByName('password')[0];
@@ -89,14 +84,19 @@ let isEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
             input.classList.remove('error-border');
             password = true;
         }
-        console.log(firstName)
     });
 });
+document
+    .getElementsByClassName('submit')[0]
+    .addEventListener('click', e => {
+        test(e);
+    });
 
-const submit = (e) => {
+
+function test(event){
     if(firstName && lastName && email && password){
         return;
     } else {
-        e.preventDefault;
+        event.preventDefault();
     }
 }

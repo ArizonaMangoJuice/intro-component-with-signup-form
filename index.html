@@ -20,7 +20,8 @@
     </div>
     <div class="right-container">
       <p class="tip"><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</p>
-      <form class="form-container">
+      <form class="form-container" action="https://www.google.com">
+        <!--  -->
         <input class="input-field" type="text" placeholder="First Name" name="firstName" />
         <label id='firstlabel'  class="hidden label-style" for="firstName">First Name cannot be empty</label>
         
@@ -33,7 +34,7 @@
         <input class="input-field" type="password" name="password" placeholder="Password"  /> 
         <label id='password' class="hidden label-style" for="password">Password cannot be empty</label>
 
-        <button class="submit">CLAIM YOUR FREE TRIAL</button>
+        <button onclick='test(event)' type="submit" class="submit">CLAIM YOUR FREE TRIAL</button>
         <p class="agree">By clicking the button, you are agreeing to our <span class="bold red">Terms and Services</span></p>
       </form>
     </div>
