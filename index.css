@@ -63,7 +63,7 @@ h1{
 
 .right-container{
     width: 40%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 70vh;
 }
 
@@ -71,13 +71,41 @@ h1{
     color: white;
     background: var(--blue);
     width: 70%;
-    margin: 15px 0 15px 0 ;
+    margin: 1vh 0 3vh 0;
     text-align: center;
     padding: 1.8vh;
     font-size: .8vw;
-    border-radius: 8px;
+    border-radius: .4vw;
 }
 
 .form-container{
+    height: 60vh;
+    border: 1px solid white;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vh 1vh;
+    background: white;
+    border-radius: .4vw;
+}
+
+.input-field{
+    font-size: .8vw;
+    padding: 1vh 1vw;
+    width: 90%;
+    margin: 0 auto;
+    border: .1vw solid var(--grayish-blue);
+    border-radius: .2vw;
+    font-weight: 500;
+}
+
+.input-field::placeholder{
+    color: var(--grayish-blue);
+}
+
+.input-field:focus{
+    outline: none;
+    border: .1vw solid var(--blue);
 
 }
